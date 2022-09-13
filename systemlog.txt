@@ -1,0 +1,21 @@
+System:    Host: ubuntu Kernel: 5.4.0-125-generic x86_64 bits: 64 Console: N/A Distro: Ubuntu 20.04.5 LTS (Focal Fossa) 
+Machine:   Type: Vmware System: VMware product: VMware Virtual Platform v: N/A 
+           serial: VMware-56 4d 43 41 9e 67 25 b4-00 7e 59 44 d6 ce dd 19 
+           Mobo: Intel model: 440BX Desktop Reference Platform serial: N/A BIOS: Phoenix v: 6.00 date: 11/12/2020 
+CPU:       Topology: 2x Dual Core model: AMD Ryzen 9 5900HX with Radeon Graphics bits: 64 type: SMP L2 cache: 2048 KiB 
+           Speed: 3294 MHz min/max: N/A Core speeds (MHz): 1: 3294 2: 3294 3: 3294 4: 3294 
+Graphics:  Device-1: VMware SVGA II Adapter driver: vmwgfx v: 2.15.0.0 
+           Display: server: No display server data found. Headless machine? tty: 155x57 
+           Message: Advanced graphics data unavailable in console for root. 
+Audio:     Device-1: Ensoniq ES1371/ES1373 / Creative Labs CT2518 driver: snd_ens1371 
+           Sound Server: ALSA v: k5.4.0-125-generic 
+Network:   Device-1: Intel 82371AB/EB/MB PIIX4 ACPI type: network bridge driver: N/A 
+           Device-2: Intel 82545EM Gigabit Ethernet driver: e1000 
+           IF: ens33 state: up speed: 1000 Mbps duplex: full mac: 00:0c:29:ce:dd:19 
+Drives:    Local Storage: total: 20.00 GiB used: 4.54 GiB (22.7%) 
+           ID-1: /dev/sda vendor: VMware model: Virtual S size: 20.00 GiB 
+Partition: ID-1: / size: 9.75 GiB used: 4.44 GiB (45.5%) fs: ext4 dev: /dev/dm-0 
+           ID-2: /boot size: 1.71 GiB used: 105.8 MiB (6.0%) fs: ext4 dev: /dev/sda2 
+Sensors:   Message: No sensors data was found. Is sensors configured? 
+Info:      Processes: 228 Uptime: 1h 25m Memory: 3.81 GiB used: 436.6 MiB (11.2%) Init: systemd runlevel: 5 Shell: bash 
+           inxi: 3.0.38 
