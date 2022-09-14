@@ -1,0 +1,95 @@
+Sep 12 17:16:46 ubuntu useradd[1022]: add 'mrt' to group 'sudo'
+Sep 12 17:16:46 ubuntu useradd[1022]: add 'mrt' to shadow group 'sudo'
+Sep 12 17:17:13 ubuntu sudo:      mrt : TTY=tty1 ; PWD=/home/mrt ; USER=root ; COMMAND=/bin/bash
+Sep 12 17:17:13 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 12 17:20:01 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 14:41:22 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/bin/bash
+Sep 13 14:41:22 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 13 16:37:54 ubuntu sudo:     root : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/sbin/useradd -md /var/www user
+Sep 13 16:37:54 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 13 16:37:54 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 16:42:06 ubuntu sudo:     root : TTY=pts/0 ; PWD=/var ; USER=root ; COMMAND=/usr/bin/id user
+Sep 13 16:42:06 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 13 16:42:06 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 16:42:32 ubuntu sudo:     root : TTY=pts/0 ; PWD=/var ; USER=root ; COMMAND=/usr/sbin/useradd sudo
+Sep 13 16:42:32 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 13 16:42:32 ubuntu useradd[7451]: failed adding user 'sudo', data deleted
+Sep 13 16:42:32 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 16:43:06 ubuntu usermod[7467]: add 'user' to group 'sudo'
+Sep 13 16:43:06 ubuntu usermod[7467]: add 'user' to shadow group 'sudo'
+Sep 13 16:43:10 ubuntu sudo:     root : TTY=pts/0 ; PWD=/var ; USER=root ; COMMAND=/usr/bin/id user
+Sep 13 16:43:10 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 13 16:43:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 16:50:25 ubuntu sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/useradd -md /var/www user
+Sep 13 16:50:25 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Sep 13 16:50:25 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 17:18:06 ubuntu sudo:     root : TTY=pts/2 ; PWD=/home/mrt/git ; USER=root ; COMMAND=/usr/bin/sh -c echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+Sep 13 17:18:06 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Sep 13 17:18:06 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 17:18:06 ubuntu sudo:     root : TTY=pts/2 ; PWD=/home/mrt/git ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Sep 13 17:18:06 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Sep 13 17:18:07 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 17:18:07 ubuntu sudo:     root : TTY=pts/2 ; PWD=/home/mrt/git ; USER=root ; COMMAND=/usr/bin/apt-get update
+Sep 13 17:18:07 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Sep 13 17:18:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 17:18:23 ubuntu sudo:     root : TTY=pts/2 ; PWD=/home/mrt/git ; USER=root ; COMMAND=/usr/bin/apt-get -y install postgresql
+Sep 13 17:18:23 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Sep 13 17:18:57 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 13 18:01:10 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 06:04:43 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/usr/sbin/reboot
+Sep 14 06:04:43 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 06:04:43 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:07:47 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/usr/bin/systemctl enable postgresql
+Sep 14 09:07:47 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:07:48 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:12:38 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/usr/bin/mc
+Sep 14 09:12:38 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:13:54 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:14:14 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/etc/init.d/postgresql restart
+Sep 14 09:14:14 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:14:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:15:28 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/usr/bin/mc
+Sep 14 09:15:28 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:18:14 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:18:27 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/etc/init.d/postgresql restart
+Sep 14 09:18:27 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:18:27 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:20:06 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/usr/bin/psql
+Sep 14 09:20:06 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:20:06 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:20:12 ubuntu sudo:      mrt : TTY=pts/0 ; PWD=/home/mrt ; USER=root ; COMMAND=/bin/bash
+Sep 14 09:20:12 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:22:00 ubuntu sudo:      mrt : TTY=tty1 ; PWD=/home/mrt ; USER=root ; COMMAND=/bin/bash
+Sep 14 09:22:00 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:39:37 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt purge
+Sep 14 09:39:37 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:39:38 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:40:04 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/sh -c echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+Sep 14 09:40:04 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:40:04 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:40:04 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-key add -
+Sep 14 09:40:04 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:40:05 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:40:05 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get update
+Sep 14 09:40:05 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:40:06 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:40:13 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt-get -y install postgresql-12
+Sep 14 09:40:13 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:41:24 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 09:52:30 ubuntu sudo:     root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/etc/init.d/postgresql restart
+Sep 14 09:52:30 ubuntu sudo: pam_unix(sudo:session): session opened for user root by mrt(uid=0)
+Sep 14 09:52:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Sep 14 10:09:24 ubuntu sudo:     root : TTY=pts/1 ; PWD=/root ; USER=postgres ; COMMAND=/usr/bin/createdb -O zabbix zabbix
+Sep 14 10:09:24 ubuntu sudo: pam_unix(sudo:session): session opened for user postgres by (uid=0)
+Sep 14 10:09:24 ubuntu sudo: pam_unix(sudo:session): session closed for user postgres
+Sep 14 10:12:10 ubuntu usermod[18540]: add 'zabbix' to group 'sudo'
+Sep 14 10:12:10 ubuntu usermod[18540]: add 'zabbix' to shadow group 'sudo'
+Sep 14 10:12:51 ubuntu sudo:     root : TTY=pts/1 ; PWD=/root ; USER=postgres ; COMMAND=/usr/bin/createdb -O zabbix zabbix
+Sep 14 10:12:51 ubuntu sudo: pam_unix(sudo:session): session opened for user postgres by (uid=0)
+Sep 14 10:12:51 ubuntu sudo: pam_unix(sudo:session): session closed for user postgres
+Sep 14 10:14:56 ubuntu sudo:     root : TTY=pts/1 ; PWD=/ ; USER=postgres ; COMMAND=/usr/bin/createdb -O zabbix zabbix
+Sep 14 10:14:56 ubuntu sudo: pam_unix(sudo:session): session opened for user postgres by (uid=0)
+Sep 14 10:14:57 ubuntu sudo: pam_unix(sudo:session): session closed for user postgres
+Sep 14 10:15:16 ubuntu sudo:     root : TTY=pts/1 ; PWD=/ ; USER=zabbix ; COMMAND=/usr/bin/psql zabbix
+Sep 14 10:15:16 ubuntu sudo: pam_unix(sudo:session): session opened for user zabbix by (uid=0)
+Sep 14 10:15:34 ubuntu sudo: pam_unix(sudo:session): session closed for user zabbix
